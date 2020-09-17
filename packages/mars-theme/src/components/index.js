@@ -24,6 +24,17 @@ const Theme = ({ state }) => {
       <Title />
       <Head>
         <meta name="description" content={state.frontity.description} />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@therealmattbert" />
+        <meta name="twitter:creator" content="@therealmattbert" />
+        <meta name="twitter:title" content="The Real Matt Bert" />
+        <meta name="twitter:description" content="The Real Matt Bert" />
+        <meta
+          name="twitter:image"
+          content="https://matthewbert-60854f.ingress-comporellon.easywp.com/wp-content/uploads/2020/09/website.png"
+        />
+
+        <meta name="description" content={state.frontity.description} />
         <html lang="en" />
       </Head>
 

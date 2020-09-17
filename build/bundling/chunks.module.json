@@ -2,36 +2,21 @@
   "errors": [],
   "warnings": [],
   "version": "4.44.1",
-  "hash": "d929e68bb856bbe8f0bc",
+  "hash": "3f2b84654a28565cdc4b",
   "publicPath": "/static/",
   "outputPath": "/Users/matthewbert/Desktop/starter-theme/build/static",
   "assetsByChunkName": {
     "list": "list.module.js",
-    "starter-theme": [
-      "starter-theme.module.js",
-      "starter-theme.8bc20f650313d729231d.hot-update.js"
-    ]
+    "starter-theme": "starter-theme.module.js"
   },
   "assets": [
-    {
-      "name": "8bc20f650313d729231d.hot-update.json",
-      "size": 55,
-      "chunks": [],
-      "chunkNames": [],
-      "info": {
-        "hotModuleReplacement": true,
-        "immutable": true
-      },
-      "emitted": false
-    },
     {
       "name": "images/matt.jpg",
       "size": 718461,
       "chunks": [],
       "chunkNames": [],
       "info": {},
-      "emitted": false,
-      "isOverSizeLimit": true
+      "emitted": false
     },
     {
       "name": "list.module.js",
@@ -43,21 +28,6 @@
         "list"
       ],
       "info": {},
-      "emitted": false
-    },
-    {
-      "name": "starter-theme.8bc20f650313d729231d.hot-update.js",
-      "size": 21816,
-      "chunks": [
-        "starter-theme"
-      ],
-      "chunkNames": [
-        "starter-theme"
-      ],
-      "info": {
-        "hotModuleReplacement": true,
-        "immutable": true
-      },
       "emitted": false
     },
     {
@@ -80,8 +50,7 @@
         "starter-theme"
       ],
       "assets": [
-        "starter-theme.module.js",
-        "starter-theme.8bc20f650313d729231d.hot-update.js"
+        "starter-theme.module.js"
       ],
       "children": {},
       "childAssets": {}
@@ -93,8 +62,7 @@
         "starter-theme"
       ],
       "assets": [
-        "starter-theme.module.js",
-        "starter-theme.8bc20f650313d729231d.hot-update.js"
+        "starter-theme.module.js"
       ],
       "children": {},
       "childAssets": {}
