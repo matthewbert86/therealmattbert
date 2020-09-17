@@ -7,6 +7,7 @@ import Post from "./post";
 import Loading from "./loading";
 import Title from "./title";
 import PageError from "./page-error";
+import Profile from "./profile";
 
 /**
  * Theme is the root React component of our theme. The one we will export
@@ -41,6 +42,9 @@ const Theme = ({ state }) => {
           <Switch>
             <Loading when={data.isFetching} />
             <List when={data.isArchive} />
+            <Profile
+              when={data.isPostType && state.router.link == "/profile/"}
+            />
             <Post when={data.isPostType} />
             <PageError when={data.isError} />
           </Switch>
@@ -74,7 +78,6 @@ const HeadContainer = styled.div`
   background-color: #8ccbfc;
   position: fixed;
   height: 100%;
-
   @media screen and (max-width: 900px) {
     & {
       width: 100%;
@@ -89,7 +92,6 @@ const Main = styled.div`
   margin: 0 auto;
   justify-content: center;
   width: 100%;
-  color: #ffffff;
 
   @media screen and (max-width: 900px) {
     & {

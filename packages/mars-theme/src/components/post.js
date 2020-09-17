@@ -68,10 +68,12 @@ const Post = ({ state, actions, libraries }) => {
 export default connect(Post);
 
 const Container = styled.div`
-  width: 60%;
+  width: 100%;
+  height: 100vh;
   margin: 0 auto;
+  padding-top: 20px;
   padding-left: 230px;
-
+  background-color: #f1f5f8;
   @media screen and (max-width: 900px) {
     & {
       width: 100%;
@@ -86,6 +88,14 @@ const Title = styled.h1`
   margin-top: 24px;
   margin-bottom: 8px;
   color: rgba(12, 17, 43);
+  padding-bottom: 20px;
+  padding-left: 200px;
+  @media screen and (max-width: 900px) {
+    & {
+      width: 90%;
+      margin: 0 auto;
+      padding: 0;
+    }
 `;
 
 const StyledLink = styled(Link)`
@@ -96,12 +106,26 @@ const Author = styled.p`
   color: rgba(12, 17, 43, 0.9);
   font-size: 0.9em;
   display: inline;
+  padding-left: 200px;
+  @media screen and (max-width: 900px) {
+    & {
+      width: 90%;
+      margin: 0 auto;
+      padding: 0;
+    }
 `;
 
 const DateWrapper = styled.p`
   color: rgba(12, 17, 43, 0.9);
   font-size: 0.9em;
   display: inline;
+  padding-left: 200px;
+  @media screen and (max-width: 900px) {
+    & {
+      width: 90%;
+      margin: 0 auto;
+      padding: 0;
+    }
 `;
 
 /**
@@ -111,6 +135,17 @@ const DateWrapper = styled.p`
 const Content = styled.div`
   color: rgba(12, 17, 43, 0.8);
   word-break: break-word;
+  width: 70%;
+  padding-left: 200px;
+  padding-right: 30px;
+  line-height: 1.6em;
+
+  @media screen and (max-width: 900px) {
+    & {
+      width: 90%;
+      margin: 0 auto;
+      padding: 0;
+    }
 
   * {
     max-width: 100%;
@@ -150,7 +185,7 @@ const Content = styled.div`
 
   a {
     color: rgb(31, 56, 197);
-    text-decoration: underline;
+    text-decoration: none;
   }
 
   /* Input fields styles */

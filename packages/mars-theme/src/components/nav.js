@@ -45,11 +45,14 @@ const NavItem = styled.div`
   margin: 0 16px;
   color: darkslategray;
   font-size: 19px;
-  font-weight: 800;
+  font-weight: 700;
   letter-spacing: 0.05rem;
   text-transform: uppercase;
   box-sizing: border-box;
   flex-shrink: 0;
+  a:hover {
+    color: #dcebf7;
+  }
 
   & > a {
     display: inline-block;
@@ -59,11 +62,6 @@ const NavItem = styled.div`
     /* Use for semantic approach to style the current link */
     &[aria-current="page"] {
       border-bottom-color: #fff;
-    }
-    & {
-      a:hover {
-        color: white;
-      }
     }
   }
 

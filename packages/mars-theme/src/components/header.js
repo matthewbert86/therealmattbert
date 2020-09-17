@@ -12,11 +12,11 @@ const Header = ({ state }) => {
         <StyledLink link="/">
           <Title>{state.frontity.title}</Title>
         </StyledLink>
+        <MobileMenu />
         <MainImage>
           <img src={matt} alt="Logo" />
         </MainImage>
         <Description>{state.frontity.description}</Description>
-        <MobileMenu />
       </Container>
       <Nav />
     </>

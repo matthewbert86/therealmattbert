@@ -13,7 +13,7 @@ const settings = {
       state: {
         theme: {
           menu: [
-            ["About", "/about/"],
+            ["Profile", "/profile/"],
             ["Blog", "/blog/"],
             ["Portfolio", "/portfolio/"],
             ["Mental Health", "/mental-health/"],
@@ -21,8 +21,8 @@ const settings = {
             ["Home", "/"]
           ],
           featured: {
-            showOnList: false,
-            showOnPost: false
+            showOnList: true,
+            showOnPost: true
           },
           autoPrefetch: "hover"
         }
@@ -34,7 +34,7 @@ const settings = {
         source: {
           api:
             "https://matthewbert-60854f.ingress-comporellon.easywp.com/wp-json",
-          homepage: "/profile/",
+          homepage: "/",
           postsPage: "/blog/"
         }
       }

@@ -34,6 +34,12 @@ const MenuOverlay = styled.div`
   z-index: 2;
   top: 0;
   left: 0;
+
+  @media screen and (min-width: 800px) {
+    & {
+      display: none;
+    }
+  }
 `;
 
 const MenuContent = styled.div`
