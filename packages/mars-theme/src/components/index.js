@@ -8,6 +8,7 @@ import Loading from "./loading";
 import Title from "./title";
 import PageError from "./page-error";
 import Profile from "./profile";
+import Contact from "./contact";
 
 /**
  * Theme is the root React component of our theme. The one we will export
@@ -44,6 +45,9 @@ const Theme = ({ state }) => {
             <List when={data.isArchive} />
             <Profile
               when={data.isPostType && state.router.link == "/profile/"}
+            />
+            <Contact
+              when={data.isPostType && state.router.link == "/contact/"}
             />
             <Post when={data.isPostType} />
             <PageError when={data.isError} />
