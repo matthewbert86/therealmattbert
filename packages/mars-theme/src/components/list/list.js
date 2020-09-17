@@ -40,6 +40,7 @@ export default connect(List);
 const Container = styled.section`
   width: 60%;
   margin: 0 auto;
+  padding-top: 50px;
   padding-left: 230px;
   list-style: none;
 

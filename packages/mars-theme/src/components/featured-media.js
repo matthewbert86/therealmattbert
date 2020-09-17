@@ -10,7 +10,7 @@ const FeaturedMedia = ({ state, id }) => {
   const srcset =
     Object.values(media.media_details.sizes)
       // Get the url and width of each size.
-      .map((item) => [item.source_url, item.width])
+      .map(item => [item.source_url, item.width])
       // Recude them to a string with the format required by `srcset`.
       .reduce(
         (final, current, index, array) =>
@@ -41,6 +41,6 @@ const Container = styled.div`
 const StyledImage = styled(Image)`
   display: block;
   height: 100%;
-  width: 100%;
+  width: 70%;
   object-fit: cover;
 `;

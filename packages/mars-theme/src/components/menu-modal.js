@@ -1,6 +1,7 @@
 import React from "react";
 import { styled, connect } from "frontity";
-import Link from "./link";
+import Link from "@frontity/components/link";
+import { FaTwitter, FaInstagram } from "react-icons/fa";
 
 const MenuModal = ({ state }) => {
   const { menu } = state.theme;
@@ -20,6 +21,17 @@ const MenuModal = ({ state }) => {
               {name}
             </MenuLink>
           ))}
+
+        <div>
+          <Icons>
+            <a href="https://twitter.com/therealmattbert/">
+              <FaTwitter />
+            </a>
+            <a href="https://www.instagram.com/therealmattbert/">
+              <FaInstagram />
+            </a>
+          </Icons>
+        </div>
       </MenuContent>
     </>
   );
@@ -44,6 +56,22 @@ const MenuOverlay = styled.div`
 
 const MenuContent = styled.div`
   z-index: 3;
+`;
+
+const Icons = styled.nav`
+  font-size: 35px;
+  padding: 30px 0 0 10px;
+  display: flex;
+  justify-content: center;
+  color: black;
+
+  a:hover {
+    color: white;
+  }
+
+  svg {
+    padding-right: 10px;
+  }
 `;
 
 const MenuLink = styled(Link)`

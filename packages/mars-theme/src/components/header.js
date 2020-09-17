@@ -4,6 +4,7 @@ import Link from "@frontity/components/link";
 import Nav from "./nav";
 import MobileMenu from "./menu";
 import matt from "../images/matt.jpg";
+import { FaTwitter, FaInstagram } from "react-icons/fa";
 
 const Header = ({ state }) => {
   return (
@@ -19,6 +20,14 @@ const Header = ({ state }) => {
         <Description>{state.frontity.description}</Description>
       </Container>
       <Nav />
+      <Icons>
+        <a href="https://twitter.com/therealmattbert/">
+          <FaTwitter />
+        </a>
+        <a href="https://www.instagram.com/therealmattbert/">
+          <FaInstagram />
+        </a>
+      </Icons>
     </>
   );
 };
@@ -65,4 +74,21 @@ const Description = styled.h4`
 
 const StyledLink = styled(Link)`
   text-decoration: none;
+`;
+
+const Icons = styled.nav`
+  font-size: 35px;
+  padding: 30px 0 0 40px;
+  display: flex;
+
+  a:hover {
+    color: white;
+  }
+
+  svg {
+    padding-right: 10px;
+  }
+  @media screen and (max-width: 1087px) {
+    display: none;
+  }
 `;
