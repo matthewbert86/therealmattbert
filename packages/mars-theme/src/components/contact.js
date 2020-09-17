@@ -83,7 +83,7 @@ const Container = styled.div`
 const Title = styled.h1`
   margin: 0 auto;
   padding-left: 120px;
-  width: 100%;
+  font-size: 45px;
   color: rgba(12, 17, 43);
   @media screen and (max-width: 900px) {
     & {

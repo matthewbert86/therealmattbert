@@ -1,10 +1,10 @@
 import React, { useEffect } from "react";
 import { connect, styled } from "frontity";
-import Link from "./link";
+import Link from "@frontity/components/link";
 import List from "./list";
 import FeaturedMedia from "./featured-media";
 
-const Post = ({ state, actions, libraries }) => {
+const Profile = ({ state, actions, libraries }) => {
   // Get information about the current URL.
   const data = state.source.get(state.router.link);
   // Get the data of the post.
@@ -65,7 +65,7 @@ const Post = ({ state, actions, libraries }) => {
   ) : null;
 };
 
-export default connect(Post);
+export default connect(Profile);
 
 const Container = styled.div`
   width: 60%;
@@ -83,9 +83,10 @@ const Container = styled.div`
 `;
 
 const Title = styled.h1`
+  font-size: 45px;
   margin: 0;
   margin-top: 24px;
-  margin-bottom: 8px;
+  margin-bottom: 50px;
   color: rgba(12, 17, 43);
 `;
 
@@ -112,6 +113,7 @@ const DateWrapper = styled.p`
 const Content = styled.div`
   color: rgba(12, 17, 43, 0.8);
   word-break: break-word;
+  padding-bottom: 50px;
 
   * {
     max-width: 100%;
@@ -119,6 +121,10 @@ const Content = styled.div`
 
   p {
     line-height: 1.6em;
+  }
+
+  h3 {
+    font-size: 25px;
   }
 
   img {

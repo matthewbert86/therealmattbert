@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { connect, styled } from "frontity";
-import Link from "./link";
+import Link from "@frontity/components/link";
 import List from "./list";
 import FeaturedMedia from "./featured-media";
 
@@ -68,12 +68,11 @@ const Post = ({ state, actions, libraries }) => {
 export default connect(Post);
 
 const Container = styled.div`
-  width: 100%;
-  height: 100vh;
+  width: 60%;
   margin: 0 auto;
   padding-top: 20px;
   padding-left: 230px;
-  background-color: #f1f5f8;
+  background-color: white;
   @media screen and (max-width: 900px) {
     & {
       width: 100%;
@@ -84,18 +83,11 @@ const Container = styled.div`
 `;
 
 const Title = styled.h1`
+  font-size: 45px;
   margin: 0;
   margin-top: 24px;
-  margin-bottom: 8px;
+  margin-bottom: 50px;
   color: rgba(12, 17, 43);
-  padding-bottom: 20px;
-  padding-left: 200px;
-  @media screen and (max-width: 900px) {
-    & {
-      width: 90%;
-      margin: 0 auto;
-      padding: 0;
-    }
 `;
 
 const StyledLink = styled(Link)`
@@ -106,26 +98,12 @@ const Author = styled.p`
   color: rgba(12, 17, 43, 0.9);
   font-size: 0.9em;
   display: inline;
-  padding-left: 200px;
-  @media screen and (max-width: 900px) {
-    & {
-      width: 90%;
-      margin: 0 auto;
-      padding: 0;
-    }
 `;
 
 const DateWrapper = styled.p`
   color: rgba(12, 17, 43, 0.9);
   font-size: 0.9em;
   display: inline;
-  padding-left: 200px;
-  @media screen and (max-width: 900px) {
-    & {
-      width: 90%;
-      margin: 0 auto;
-      padding: 0;
-    }
 `;
 
 /**
@@ -135,17 +113,7 @@ const DateWrapper = styled.p`
 const Content = styled.div`
   color: rgba(12, 17, 43, 0.8);
   word-break: break-word;
-  width: 70%;
-  padding-left: 200px;
-  padding-right: 30px;
-  line-height: 1.6em;
-
-  @media screen and (max-width: 900px) {
-    & {
-      width: 90%;
-      margin: 0 auto;
-      padding: 0;
-    }
+  padding-bottom: 50px;
 
   * {
     max-width: 100%;
@@ -153,6 +121,10 @@ const Content = styled.div`
 
   p {
     line-height: 1.6em;
+  }
+
+  h3 {
+    font-size: 25px;
   }
 
   img {
