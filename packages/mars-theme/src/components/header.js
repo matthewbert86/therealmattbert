@@ -3,6 +3,7 @@ import { connect, styled } from "frontity";
 import Link from "./link";
 import Nav from "./nav";
 import MobileMenu from "./menu";
+import matt from "../images/matt.jpg";
 
 const Header = ({ state }) => {
   return (
@@ -11,6 +12,9 @@ const Header = ({ state }) => {
         <StyledLink link="/">
           <Title>{state.frontity.title}</Title>
         </StyledLink>
+        <MainImage>
+          <img src={matt} alt="Logo" />
+        </MainImage>
         <Description>{state.frontity.description}</Description>
         <MobileMenu />
       </Container>
@@ -38,8 +42,24 @@ const Title = styled.h2`
   margin-bottom: 16px;
 `;
 
+const MainImage = styled.div`
+  margin: 0 auto;
+  padding: 10px;
+  img {
+    width: 200px;
+    border-radius: 50%;
+  }
+
+  @media screen and (max-width: 800px) {
+    & {
+    }
+  }
+`;
+
 const Description = styled.h4`
-  margin: 0;
+  margin: 0 auto;
+  padding: 10px 2px;
+  letter-spacing: 1.3px;
   color: rgba(255, 255, 255, 0.7);
 `;
 
