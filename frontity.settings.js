@@ -21,7 +21,7 @@ const settings = {
             ["Home", "/"]
           ],
           featured: {
-            showOnList: true,
+            showOnList: false,
             showOnPost: true
           },
           autoPrefetch: "hover"

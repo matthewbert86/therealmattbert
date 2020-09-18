@@ -35,6 +35,7 @@ export default connect(FeaturedMedia);
 
 const Container = styled.div`
   margin-top: 16px;
+  margin-bottom: 50px;
   height: 300px;
 `;
 

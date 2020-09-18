@@ -21,39 +21,33 @@ const Item = ({ state, item }) => {
        * If the want to show featured media in the
        * list of featured posts, we render the media.
        */}
-      <ColumnOne>
-        <Link link={item.link}>
-          {state.theme.featured.showOnList && (
-            <ListImage id={item.featured_media} />
-          )}
-        </Link>
-      </ColumnOne>
 
-      <ColumnTwo>
-        <Link link={item.link}>
-          <Title dangerouslySetInnerHTML={{ __html: item.title.rendered }} />
-        </Link>
-
-        {/* If the post has an excerpt (short summary text), we render it */}
-        {item.excerpt && (
-          <Excerpt
-            dangerouslySetInnerHTML={{ __html: item.excerpt.rendered }}
-          />
+      <Link link={item.link}>
+        <Title dangerouslySetInnerHTML={{ __html: item.title.rendered }} />
+      </Link>
+      <Link link={item.link}>
+        {state.theme.featured.showOnList && (
+          <ListImage id={item.featured_media} />
         )}
+      </Link>
 
-        {/* If the post has an author, we render a clickable author text. */}
-        {author && (
-          <StyledLink link={author.link}>
-            <AuthorName>
-              By <b>{author.name}</b>
-            </AuthorName>
-          </StyledLink>
-        )}
-        <PublishDate>
-          {" "}
-          on <b>{date.toDateString()}</b>
-        </PublishDate>
-      </ColumnTwo>
+      {/* If the post has an excerpt (short summary text), we render it */}
+      {item.excerpt && (
+        <Excerpt dangerouslySetInnerHTML={{ __html: item.excerpt.rendered }} />
+      )}
+
+      {/* If the post has an author, we render a clickable author text. */}
+      {author && (
+        <StyledLink link={author.link}>
+          <AuthorName>
+            By <b>{author.name}</b>
+          </AuthorName>
+        </StyledLink>
+      )}
+      <PublishDate>
+        {" "}
+        on <b>{date.toDateString()}</b>
+      </PublishDate>
     </StyledArticle>
   );
 };
@@ -62,44 +56,16 @@ const Item = ({ state, item }) => {
 export default connect(Item);
 
 const StyledArticle = styled.article`
-  padding: 12px;
+  padding: 0 0px 50px 100px;
   margin: 0 auto;
-  width: 95%;
+  width: 55%;
   @media screen and (max-width: 800px) {
     & {
       width: 90%;
       display: block;
       margin-bottom: 20px;
+      padding: 0 0 30px 0;
       height: 200px;
-    }
-  }
-`;
-
-const ColumnOne = styled.div`
-  float: left;
-  width: 40%;
-
-  @media screen and (max-width: 800px) {
-    & {
-      width: 100%;
-      display: block;
-      padding: 0 0;
-    }
-  }
-`;
-
-const ColumnTwo = styled.div`
-  float: right;
-  width: 55%;
-  height: auto;
-  padding: 0;
-
-  @media screen and (max-width: 800px) {
-    & {
-      width: 100%;
-      display: block;
-      margin: 0 auto;
-      padding-bottom: 20px;
     }
   }
 `;

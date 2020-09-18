@@ -2,19 +2,19 @@
   "errors": [],
   "warnings": [],
   "version": "4.44.1",
-  "hash": "64bc0c9e73fcdd285b0d",
+  "hash": "a8d2d3d53fb948f38d59",
   "publicPath": "/static/",
   "outputPath": "/Users/matthewbert/Desktop/starter-theme/build/static",
   "assetsByChunkName": {
     "list": "list.module.js",
     "starter-theme": [
       "starter-theme.module.js",
-      "starter-theme.7355a364a25a2d8b9d3c.hot-update.js"
+      "starter-theme.33e78dd7327b5c9a405f.hot-update.js"
     ]
   },
   "assets": [
     {
-      "name": "7355a364a25a2d8b9d3c.hot-update.json",
+      "name": "33e78dd7327b5c9a405f.hot-update.json",
       "size": 55,
       "chunks": [],
       "chunkNames": [],
@@ -35,7 +35,7 @@
     },
     {
       "name": "list.module.js",
-      "size": 83106,
+      "size": 67717,
       "chunks": [
         "list"
       ],
@@ -46,8 +46,8 @@
       "emitted": false
     },
     {
-      "name": "starter-theme.7355a364a25a2d8b9d3c.hot-update.js",
-      "size": 21175,
+      "name": "starter-theme.33e78dd7327b5c9a405f.hot-update.js",
+      "size": 63429,
       "chunks": [
         "starter-theme"
       ],
@@ -62,7 +62,7 @@
     },
     {
       "name": "starter-theme.module.js",
-      "size": 9264106,
+      "size": 9264221,
       "chunks": [
         "starter-theme"
       ],
@@ -81,7 +81,7 @@
       ],
       "assets": [
         "starter-theme.module.js",
-        "starter-theme.7355a364a25a2d8b9d3c.hot-update.js"
+        "starter-theme.33e78dd7327b5c9a405f.hot-update.js"
       ],
       "children": {},
       "childAssets": {}
@@ -94,7 +94,7 @@
       ],
       "assets": [
         "starter-theme.module.js",
-        "starter-theme.7355a364a25a2d8b9d3c.hot-update.js"
+        "starter-theme.33e78dd7327b5c9a405f.hot-update.js"
       ],
       "children": {},
       "childAssets": {}

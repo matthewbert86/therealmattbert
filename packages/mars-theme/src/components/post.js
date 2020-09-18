@@ -86,7 +86,7 @@ const Title = styled.h1`
   font-size: 45px;
   margin: 0;
   margin-top: 24px;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
   color: rgba(12, 17, 43);
 `;
 
