@@ -1,7 +1,7 @@
 import React from "react";
 import { styled, connect } from "frontity";
 import Link from "./link";
-import { FaTwitter, FaInstagram } from "react-icons/fa";
+import { FaTwitter, FaInstagram, FaGithub } from "react-icons/fa";
 
 const MenuModal = ({ state, actions }) => {
   const { menu } = state.theme;
@@ -28,6 +28,9 @@ const MenuModal = ({ state, actions }) => {
           </a>
           <a href="https://www.instagram.com/therealmattbert/">
             <FaInstagram />
+          </a>
+          <a href="https://github.com/matthewbert86/">
+            <FaGithub />
           </a>
         </Icons>
       </MenuContent>

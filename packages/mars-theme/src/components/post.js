@@ -114,6 +114,7 @@ const Content = styled.div`
   color: rgba(12, 17, 43, 0.8);
   word-break: break-word;
   padding-bottom: 50px;
+  line-height: 1.5;
 
   * {
     max-width: 100%;

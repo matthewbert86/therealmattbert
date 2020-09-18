@@ -14,6 +14,8 @@
   "prettier": {},
   "dependencies": {
     "@frontity/core": "^1.8.0",
+    "@frontity/google-analytics": "^1.2.0",
+    "@frontity/head-tags": "^1.0.7",
     "@frontity/html2react": "^1.4.0",
     "@frontity/mars-theme": "./packages/mars-theme",
     "@frontity/tiny-router": "^1.2.1",

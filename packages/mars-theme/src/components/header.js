@@ -4,7 +4,7 @@ import Link from "@frontity/components/link";
 import Nav from "./nav";
 import MobileMenu from "./menu";
 import matt from "../images/matt.jpg";
-import { FaTwitter, FaInstagram } from "react-icons/fa";
+import { FaTwitter, FaInstagram, FaGithub } from "react-icons/fa";
 
 const Header = ({ state }) => {
   return (
@@ -26,6 +26,9 @@ const Header = ({ state }) => {
         </a>
         <a href="https://www.instagram.com/therealmattbert/">
           <FaInstagram />
+        </a>
+        <a href="https://github.com/matthewbert86/">
+          <FaGithub />
         </a>
       </Icons>
     </>
