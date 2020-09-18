@@ -42,29 +42,23 @@ const Theme = ({ state }) => {
       Not classes here because we use CSS-in-JS. Only global HTML tags. */}
       <Global styles={globalStyles} />
 
-      <MainContainer>
-        {/* Add the header of the site. */}
-        <HeadContainer>
-          <Header />
-        </HeadContainer>
+      {/* Add the header of the site. */}
+      <HeadContainer>
+        <Header />
+      </HeadContainer>
 
-        {/* Add the main section. It renders a different component depending
+      {/* Add the main section. It renders a different component depending
       on the type of URL we are in. */}
-        <Main>
-          <Switch>
-            <Loading when={data.isFetching} />
-            <List when={data.isArchive} />
-            <Profile
-              when={data.isPostType && state.router.link == "/profile/"}
-            />
-            <Contact
-              when={data.isPostType && state.router.link == "/contact/"}
-            />
-            <Post when={data.isPostType} />
-            <PageError when={data.isError} />
-          </Switch>
-        </Main>
-      </MainContainer>
+      <Main>
+        <Switch>
+          <Loading when={data.isFetching} />
+          <List when={data.isArchive} />
+          <Profile when={data.isPostType && state.router.link == "/profile/"} />
+          <Contact when={data.isPostType && state.router.link == "/contact/"} />
+          <Post when={data.isPostType} />
+          <PageError when={data.isError} />
+        </Switch>
+      </Main>
     </>
   );
 };
@@ -83,8 +77,6 @@ const globalStyles = css`
     text-decoration: none;
   }
 `;
-
-const MainContainer = styled.div``;
 
 const HeadContainer = styled.div`
   margin: 0;

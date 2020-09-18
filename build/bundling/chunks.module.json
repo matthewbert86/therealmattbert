@@ -2,21 +2,36 @@
   "errors": [],
   "warnings": [],
   "version": "4.44.1",
-  "hash": "3f2b84654a28565cdc4b",
+  "hash": "64bc0c9e73fcdd285b0d",
   "publicPath": "/static/",
   "outputPath": "/Users/matthewbert/Desktop/starter-theme/build/static",
   "assetsByChunkName": {
     "list": "list.module.js",
-    "starter-theme": "starter-theme.module.js"
+    "starter-theme": [
+      "starter-theme.module.js",
+      "starter-theme.7355a364a25a2d8b9d3c.hot-update.js"
+    ]
   },
   "assets": [
+    {
+      "name": "7355a364a25a2d8b9d3c.hot-update.json",
+      "size": 55,
+      "chunks": [],
+      "chunkNames": [],
+      "info": {
+        "hotModuleReplacement": true,
+        "immutable": true
+      },
+      "emitted": false
+    },
     {
       "name": "images/matt.jpg",
       "size": 718461,
       "chunks": [],
       "chunkNames": [],
       "info": {},
-      "emitted": false
+      "emitted": false,
+      "isOverSizeLimit": true
     },
     {
       "name": "list.module.js",
@@ -31,8 +46,23 @@
       "emitted": false
     },
     {
+      "name": "starter-theme.7355a364a25a2d8b9d3c.hot-update.js",
+      "size": 21175,
+      "chunks": [
+        "starter-theme"
+      ],
+      "chunkNames": [
+        "starter-theme"
+      ],
+      "info": {
+        "hotModuleReplacement": true,
+        "immutable": true
+      },
+      "emitted": false
+    },
+    {
       "name": "starter-theme.module.js",
-      "size": 9265205,
+      "size": 9264106,
       "chunks": [
         "starter-theme"
       ],
@@ -50,7 +80,8 @@
         "starter-theme"
       ],
       "assets": [
-        "starter-theme.module.js"
+        "starter-theme.module.js",
+        "starter-theme.7355a364a25a2d8b9d3c.hot-update.js"
       ],
       "children": {},
       "childAssets": {}
@@ -62,7 +93,8 @@
         "starter-theme"
       ],
       "assets": [
-        "starter-theme.module.js"
+        "starter-theme.module.js",
+        "starter-theme.7355a364a25a2d8b9d3c.hot-update.js"
       ],
       "children": {},
       "childAssets": {}

@@ -1,9 +1,9 @@
 import React from "react";
 import { styled, connect } from "frontity";
-import Link from "@frontity/components/link";
+import Link from "./link";
 import { FaTwitter, FaInstagram } from "react-icons/fa";
 
-const MenuModal = ({ state }) => {
+const MenuModal = ({ state, actions }) => {
   const { menu } = state.theme;
   const isThereLinks = menu != null && menu.length > 0;
 
@@ -22,16 +22,14 @@ const MenuModal = ({ state }) => {
             </MenuLink>
           ))}
 
-        <div>
-          <Icons>
-            <a href="https://twitter.com/therealmattbert/">
-              <FaTwitter />
-            </a>
-            <a href="https://www.instagram.com/therealmattbert/">
-              <FaInstagram />
-            </a>
-          </Icons>
-        </div>
+        <Icons>
+          <a href="https://twitter.com/therealmattbert/">
+            <FaTwitter />
+          </a>
+          <a href="https://www.instagram.com/therealmattbert/">
+            <FaInstagram />
+          </a>
+        </Icons>
       </MenuContent>
     </>
   );
@@ -49,7 +47,6 @@ const MenuOverlay = styled.div`
 
   @media screen and (min-width: 800px) {
     & {
-      display: none;
     }
   }
 `;
